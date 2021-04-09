@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    overflow-x: hidden;
+}
+
+/* CSS das áreas do header e menu*/
+
+
+header {
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+.header {
+    max-width: 1140px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.logo{ width: 100px;
+
+}
+.logoimg {
+    width: 80px;
+    height: 80px;
+    
+}
+img {
+    width: 120px;
+    height: 80px;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; 
+      
+}
+.search {
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid #b28756;
+    text-decoration: none;
+    outline: none;
+}
+.menu li div {
+    color: white;
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+.menu ul, .menu li {
+    list-style: none;
+}
+.menu ul {
+    display: flex;
+}
+.menu li a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration:none;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    border-bottom: 5px solid black;
+}
+.menu li a:hover {
+    border-bottom: 5px solid #b28756;
+    color: #ccc;
+}
+#iframe {
+    display: none;
+}
+
+
+/* CSS das áreas do banner*/
+.banner {
+    height: calc(100vh - 100px);
+    background-color: #333;
+    background-image: url('https://www.euandopelomundo.com/wp-content/uploads/2019/04/sao_paulo.jpg');
+    background-size: cover;
+    background-position: bottom ;
+    overflow: hidden;
+}
+.banner .sliders{
+        height: 100%;  
+        width: 1000vw;
+}
+.banner .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.67);
+}
+.banner .slidearea {
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+.banner h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 45px;
+}
+.banner h1 span {
+    color: #b28756;
+}
+.banner h2 {
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+.button {
+    display: inline-block;
+    background-color: #b28756;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    padding:20px 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+
+/* CSS das áreas de contato novamente*/
+.default {
+    
+    width: 100vw;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.default .section-title, .default .section-desc {
+    text-align: center;
+    text-transform: uppercase;
+}
+.default .section-title {
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.default .section-desc {
+    font-size: 12px;
+    font-weight: 600;
+    color: #ccc;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.default .section-body {
+    margin: auto;
+    max-width: 1140px;
+    ;
+}
+.default.light {
+    background-color: #f7f7f7;
+}
+.default.light .section-title
+, .default .section-body {
+    color: black;
+}
+.default.dark  {
+    background-color: black;
+}
+.default.dark .section-title
+,.default.dark .section-body {
+    color: white;
+}
+
+
+
+
+
+/* CSS das áreas do footer*/
+
+ .section-share--icon.linkedin {
+     background-color: #127cb4;
+ }
+ .section-share--icon.twitter {
+     background-color: #34c5f0;
+ }
+ .section-share--icon.facebook {
+     background-color: #336297;
+ }
+ .section-share--icon.googleplus {
+     background-color: #e74237;
+ }
+ .section-share--icon.pinterest {
+     background-color: #b71c29;
+ }
+ .section-contact {
+     max-width: 450px;
+     margin: auto;
+     text-align: center;
+ }
+ .section-contact--split {
+     display: flex;
+ }
+ .section-contact input[type=text], .section-contact textarea {
+     display: block;
+     width: 100%;
+     height: 40px;
+     border: 0;
+     background: transparent;
+     border-bottom: 1px solid #CCC;
+     outline: 0;
+     margin-top: 10px;
+ }
+ .section-contact textarea {
+     height: 100px;
+     resize: none;
+ }
+ .section-contact textarea {
+     height: 100px;
+     resize: none;
+ }
+ .button {
+     display: inline-block;
+     background-color: #B28756;
+     color: #FFF;
+     text-transform: uppercase;
+     font-size: 12px;
+     font-weight: 600;
+     text-decoration: none;
+     padding: 10px 30px;
+     margin-top: 30px;
+     border-radius: 20px;
+     border: transparent;
+ }
+ 
+
+ /* CSS das áreas do footer*/
+ footer {
+     background-color: #000;
+     padding: 20px;
+ }
+ .footer--area {
+     max-width: 1140px;
+     margin: auto;
+     color: #FFF;
+     display: flex;
+ }
+ .footer--item {
+     flex: 1;
+ }
+ .footer--item.area2 {
+     color: #999;
+     line-height: 20px;
+     font-size: 13px;
+     padding: 0 10px 10px 10px;
+ }
+ .footer-social {
+     display: flex;
+ }
+ .footer-social img {
+     height: 10px;
+ }
+ .footer-social a {
+     display: block;
+     width: 25px;
+     height: 25px;
+     background-color: #333;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 13px;
+     margin-right: 10px;
+ }
+ .footer--item.area2 {
+     color: #999;
+     line-height: 20px;
+     font-size: 13px;
+     padding: 0 10px 10px 10px;
+ }
+ .footer--item.area3 form {
+     background-color: #333;
+     text-align: center;
+     padding: 30px;
+ }
+ .footer--item.area3 input {
+     width: 100%;
+     height: 40px;
+     border: 0;
+     background: transparent;
+     border-bottom: 1px solid #CCC;
+     outline: 0;
+     color: #FFF;
+     font-size: 14px;
+     text-align: center;
+ }
+ .button {
+     display: inline-block;
+     background-color: #B28756;
+     color: #FFF;
+     text-transform: uppercase;
+     font-size: 12px;
+     font-weight: 600;
+     text-decoration: none;
+     padding: 10px 30px;
+     margin-top: 30px;
+     border-radius: 20px;
+ }
+
+
